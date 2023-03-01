@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCFC"
+    android:foregroundTint="#00504848">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Send SMS"
+        android:textColor="@color/blue_2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/css"
+        android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+        android:drawablePadding="8dp"
+        android:ems="14"
+        android:hint="*Mobile Number"
+        android:inputType="textPersonName"
+        android:padding="10sp"
+        android:textColorHint="@color/blue_2"
+        android:textColor="@color/blue_2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/css"
+        android:drawableLeft="@drawable/product"
+        android:drawablePadding="8dp"
+        android:ems="14"
+        android:hint="*Product Title"
+        android:inputType="textPersonName"
+        android:padding="10sp"
+        android:textColorHint="@color/blue_2"
+        android:textColor="@color/blue_2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/firstname"
+        app:layout_constraintStart_toStartOf="@+id/firstname"
+        app:layout_constraintTop_toBottomOf="@+id/firstname" />
+
+    <EditText
+        android:id="@+id/semail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/css"
+        android:drawableLeft="@drawable/description"
+        android:drawablePadding="8dp"
+        android:ems="14"
+        android:hint="*Description"
+        android:inputType="textPersonName"
+        android:padding="10sp"
+        android:textColorHint="@color/blue_2"
+        android:textColor="@color/blue_2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lastname"
+        app:layout_constraintStart_toStartOf="@+id/lastname"
+        app:layout_constraintTop_toBottomOf="@+id/lastname" />
+
+
+    <EditText
+        android:id="@+id/spassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/css"
+        android:drawableLeft="@drawable/quantity"
+        android:drawablePadding="8dp"
+        android:ems="14"
+        android:hint="*Quantity"
+        android:inputType="number"
+        android:padding="10sp"
+        android:textColorHint="@color/blue_2"
+        android:textColor="@color/blue_2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/semail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/semail"
+        app:layout_constraintTop_toBottomOf="@+id/semail" />
+
+    <EditText
+        android:id="@+id/scpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/css"
+        android:drawableLeft="@drawable/price"
+        android:drawablePadding="8dp"
+        android:ems="14"
+        android:hint="*Price"
+        android:inputType="number"
+        android:padding="10sp"
+        android:textColorHint="@color/blue_2"
+        android:textColor="@color/blue_2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/spassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spassword"
+        app:layout_constraintTop_toBottomOf="@+id/spassword" />
+
+
+    <Button
+        android:id="@+id/btnsendsms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#E65F34"
+        android:drawableLeft="@drawable/sendmob"
+        android:drawablePadding="8dp"
+        android:fontFamily="serif"
+        android:text="Send SMS"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/scpassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/scpassword"
+        app:layout_constraintTop_toBottomOf="@+id/scpassword" />
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="396dp"
+        android:layout_height="249dp"
+        android:background="@drawable/loginimg"
+        android:textColor="#F6F5F5"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="OnClick,ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
